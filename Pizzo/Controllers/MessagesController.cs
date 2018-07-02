@@ -18,7 +18,7 @@ namespace Pizzo
         /// </summary>
         public async Task<HttpResponseMessage> Post([FromBody]Activity activity)
         {
-            Dialogs.RootDialog rd = new Dialogs.RootDialog();
+            //Dialogs.RootDialog rd = new Dialogs.RootDialog();
            
             if (activity.GetActivityType() == ActivityTypes.Message)
             {

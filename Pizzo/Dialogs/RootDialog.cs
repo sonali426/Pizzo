@@ -48,9 +48,6 @@ namespace Pizzo.Dialogs
         public async Task AddPizza(IDialogContext context, IAwaitable<IMessageActivity> activity)
         {   
 
-            //initialize a list to store the pizza orders of the user
-            //List<string> pizza = new List<string>();
-
             var response = await activity;
             var reply = context.MakeMessage();
 
@@ -76,7 +73,6 @@ namespace Pizzo.Dialogs
         private async Task ResumeAddMorePizza(IDialogContext context, IAwaitable<string> activity)
         {   
 
-            
             var response = await activity;
 
             //if the user wants to add more pizza, call the function to show the pizza options
